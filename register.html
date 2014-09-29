@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Form App Development</title>
+  <link rel="Stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/general.js"></script>
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>TEST<span>Form App</span></div>
+		</div>
+		<br>
+		<div class="login">
+<!--
+			<form >
+				<input type="text" placeholder="email or username" name="username"><br>
+				<input type="text" placeholder="first name" name="firstname" style="margin-top: 10px; width: 119px;">
+				<input type="text" placeholder="last name" name="lastname" style="margin-top: 10px; width: 119px;"><br>
+				<input type="text" list="positions" placeholder="position" style="margin-top: 10px;"><br>
+				
+				<input type="submit" style="width: 260px;" value="Submit" >
+			<form>
+-->
+
+        <table width="250px" style="margin-top: 10px;"  cellspacing="0" cellpadding="0" style="border-spacing:0;" id="QMSTable">
+    <col width="25px" />
+    <col width="100px" />
+    <col width="200px" />
+    <col width="60px" />
+    <tr>
+    </tr>
+    
+    <tr style="margin-top: 10px;" >
+        
+        <td class="allbdrCenMid">
+            <input id="Q1CALC" type="text" value="" placeholder="email" class="nobdrCenMid" style="overflow:hidden; width:93% " name="Q1CALC" />
+        </td>
+    </tr>
+    <tr style="margin-top: 10px;" >
+
+        <td class="allbdrCenMid">
+            <input id="Q2CALC" type="text" value="" placeholder="first name" class="nobdrCenMid" style="overflow:hidden; width: 110px;" name="Q2CALC" />
+            <input id="Q3CALC" type="text" value="" placeholder="last name" class="nobdrCenMid" style="overflow:hidden; width: 110px; " name="Q3CALC" />
+        </td>
+
+
+    </tr>
+      <tr style="margin-top: 10px;" >
+
+        <td class="allbdrCenMid">
+            <select id="Q4CALC" type="text" value="" list="years" placeholder="Expected Start Year" class="nobdrCenMid" style="overflow:hidden; width: 97%;" name="Q4CALC" />
+            <datalist id="years">
+            <option value="" disabled selected>Expected Start Year</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+          </datalist>
+           
+        </td>
+
+
+    </tr>
+    <tr style="margin-top: 10px;" >
+        <td class="allbdrCenMid">
+            <select id="Q5CALC" type="text" list="majors" value="" placeholder="major" class="nobdrCenMid" style="overflow:hidden; width:97% " name="Q5CALC" />
+            <datalist id="majors">
+          <option value="" disabled selected>Area of Interest</option>
+          <option>Aerospace Engineering</option>
+          <option>Bioengineering</option>
+          <option>Bioengineering: Bioinformatics</option>
+          <option>Bioengineering: BioSystems</option>
+          <option>Bioengineering: Biotechnology</option>
+          <option>Chemical Engineering</option>
+          <option>Computer Engineering</option>
+          <option>Computer Science</option>
+          <option>Computer Science: Bioinformatics</option>
+          <option>Electrical Engineering</option>
+          <option>Electrical Engineering and Society</option>
+          <option>Engineering Physics</option>
+          <option>Engineering Sciences</option>
+          <option>Environmental Engineering</option>
+          <option>Mechanical Engineering</option>
+          <option>NanoEngineering</option>
+          <option>Structural Engineering</option>
+        </datalist>
+        <!-- 
+
+Mechanical Engineering
+
+NanoEngineering
+
+Structural Engineering
+-->
+        </td>
+    </tr>
+</table>
+<input type="button" id="aaa" onclick="document.location.href='index.html'; someFunc(); " style="width: 245px;" value="Submit" >
+<input type="button" id="reloadButton" onClick="history.go(0)" style="width: 245px;" value="New Entry" >
+<!-- document.location.href='register.html'; -->
+
+
+
+<div id="hidTable" style="display: none">
+    <table id="testTable">
+        <caption>Response</caption>
+        <colgroup></colgroup>
+        <colgroup></colgroup>
+        <colgroup></colgroup>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Q1</td>
+                <td>Name</td>
+                <td id="htqf1">-</td>
+            </tr>
+            <tr>
+                <td>Q2</td>
+                <td>First Name</td>
+                <td id="htqf2">-</td>
+            </tr>
+            <tr>
+                <td>Q3</td>
+                <td>Last Name</td>
+                <td id="htqf3">-</td>
+            </tr>
+            <tr>
+                <td>Q4</td>
+                <td>Expected Year to Start</td>
+                <td id="htqf4">-</td>
+            </tr>
+            <tr>
+                <td>Q5</td>
+                <td>Area of Interest</td>
+                <td id="htqf5">-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+  <script src='js/jquery.js'></script>
+  <script>
+
+
+</body>
+
+</html>
